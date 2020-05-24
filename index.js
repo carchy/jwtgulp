@@ -7,7 +7,7 @@ let less = require('./lib/compileless.js');
 //let tsh = require('./js/rxmPackageJsTask.js');
 let tshr = require('./lib/ts2amdes5');
 let clone = require('./lib/clone');
-//let tsDeclare = require('./js/rxmTsDeclare.js');
+let htmlmin = require('./lib/htmlmin');
 //let amdVersion=require('./js/rxmAmdVersion')
 let argsParse=require('minimist')
 class  jwtgulp  {
@@ -37,7 +37,7 @@ class  jwtgulp  {
     //     return r ;
     // };
     taskLess = function (param) {
-        return  this.release?lessr().bind(param):less().bind(param);
+        return  less().bind(param);
     };
     taskClean = function (param) {
         return cleanDir().bind(param);
@@ -49,12 +49,12 @@ class  jwtgulp  {
     taskClone = function (param) {
         return clone().bind(param);
     };
-    // taskTsDeclare = function (param) {
-    //     return tsDeclare().bind(param);
-    // };
+    taskHtml = function (param) {
+         return htmlmin().bind(param);
+     };
     // amdVersion=function(param){
     //     return amdVersion.bind(param);
     // }}
 }
 
- export default new jwtgulp;
+ module.exports= new jwtgulp;
