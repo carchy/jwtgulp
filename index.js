@@ -10,7 +10,7 @@ let clone = require('./lib/clone');
 let htmlmin = require('./lib/htmlmin');
 //let amdVersion=require('./js/rxmAmdVersion')
 let argsParse=require('minimist')
-class  jwtgulp  {
+class  gulpex  {
     constructor() {
         //this.taskSetting({ rxmObj: this });
         //是否是release版本
@@ -57,4 +57,4 @@ class  jwtgulp  {
     // }}
 }
 
- module.exports= new jwtgulp;
+ module.exports= new gulpex;

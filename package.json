@@ -1,7 +1,7 @@
 {
-  "name": "jwtgulp",
+  "name": "@carchy/gulp",
   "version": "1.0.0",
-  "description": "gulp",
+  "description": "gulp easyly",
   "main": "index.js",
   "directories": {
     "lib": "lib"
